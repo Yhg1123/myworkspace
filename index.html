@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>手机屏幕自动点击器</title>
-    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -71,7 +71,7 @@
         <h1>手机屏幕自动点击器</h1>
         
         <div class="qrcode-container">
-            <canvas id="qrcode"></canvas>
+            <div id="qrcode"></div>
             <p>扫描二维码在手机上使用</p>
         </div>
         
@@ -112,15 +112,13 @@
         // 生成当前页面的二维码
         window.onload = function() {
             const currentUrl = window.location.href;
-            QRCode.toCanvas(document.getElementById('qrcode'), currentUrl, {
+            new QRCode(document.getElementById("qrcode"), {
+                text: currentUrl,
                 width: 200,
-                margin: 2,
-                color: {
-                    dark: '#000000',
-                    light: '#ffffff'
-                }
-            }, function (error) {
-                if (error) console.error(error);
+                height: 200,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
             });
         };
 

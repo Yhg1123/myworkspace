@@ -71,7 +71,7 @@
         <h1>手机屏幕自动点击器</h1>
         
         <div class="qrcode-container">
-            <div id="qrcode"></div>
+            <canvas id="qrcode"></canvas>
             <p>扫描二维码在手机上使用</p>
         </div>
         
@@ -110,12 +110,19 @@
 
     <script>
         // 生成当前页面的二维码
-        QRCode.toCanvas(document.getElementById('qrcode'), window.location.href, {
-            width: 200,
-            margin: 2
-        }, function (error) {
-            if (error) console.error(error);
-        });
+        window.onload = function() {
+            const currentUrl = window.location.href;
+            QRCode.toCanvas(document.getElementById('qrcode'), currentUrl, {
+                width: 200,
+                margin: 2,
+                color: {
+                    dark: '#000000',
+                    light: '#ffffff'
+                }
+            }, function (error) {
+                if (error) console.error(error);
+            });
+        };
 
         let clickInterval;
         const startBtn = document.getElementById('startBtn');

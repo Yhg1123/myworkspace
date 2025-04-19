@@ -64,6 +64,16 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .instructions {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .important {
+            color: #dc3545;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -97,14 +107,35 @@
         
         <div class="instructions">
             <h3>使用说明：</h3>
+            <p class="important">重要提示：本工具需要配合手机上的"自动点击器"应用使用</p>
             <ol>
+                <li>在手机上下载并安装"自动点击器"应用（如：Auto Clicker、自动点击器等）</li>
                 <li>在手机上打开开发者选项</li>
                 <li>开启"指针位置"选项</li>
                 <li>移动手指到想要点击的位置，记录显示的坐标</li>
-                <li>将坐标输入到上面的输入框中</li>
-                <li>设置点击间隔时间</li>
-                <li>点击"开始点击"按钮</li>
+                <li>在自动点击器应用中设置：
+                    <ul>
+                        <li>点击间隔：30秒（或你想要的间隔）</li>
+                        <li>点击坐标：使用记录的X和Y坐标</li>
+                        <li>点击次数：根据需要设置（或选择无限）</li>
+                    </ul>
+                </li>
+                <li>启动自动点击器应用</li>
             </ol>
+            
+            <h3>推荐应用：</h3>
+            <ul>
+                <li>Android: "自动点击器 - Auto Clicker"</li>
+                <li>iOS: "自动点击器"（需要越狱）</li>
+            </ul>
+            
+            <h3>注意事项：</h3>
+            <ul>
+                <li>不同手机可能需要不同的自动点击器应用</li>
+                <li>某些应用可能需要root权限</li>
+                <li>请确保手机屏幕常亮</li>
+                <li>建议先测试短时间，确认效果后再设置长时间运行</li>
+            </ul>
         </div>
     </div>
 

@@ -84,6 +84,23 @@
             max-width: 100%;
             border-radius: 5px;
             margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .step {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .step-number {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -119,6 +136,100 @@
         <div class="instructions">
             <h3>使用说明：</h3>
             <p class="important">重要提示：本工具需要配合手机上的"自动点击器"应用使用</p>
+            
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>下载应用</strong>
+                <p>在手机应用商店搜索并下载"自动点击器"应用</p>
+                <p>推荐应用：</p>
+                <ul>
+                    <li>Android: "自动点击器 - Auto Clicker"</li>
+                    <li>Android: "点击助手"（功能更强大）</li>
+                    <li>iOS: "自动点击器"（需要越狱）</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>获取点击坐标</strong>
+                <p>在手机上：</p>
+                <ol>
+                    <li>打开"设置"</li>
+                    <li>找到"关于手机"</li>
+                    <li>连续点击"版本号"7次，开启开发者选项</li>
+                    <li>返回设置，找到"开发者选项"</li>
+                    <li>开启"指针位置"选项</li>
+                    <li>移动手指到想要点击的位置，记录显示的坐标</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>设置自动点击</strong>
+                <p>在自动点击器应用中：</p>
+                <ol>
+                    <li>点击"+"添加新的点击任务</li>
+                    <li>设置点击坐标（使用刚才记录的坐标）</li>
+                    <li>设置点击间隔（建议30秒）</li>
+                    <li>设置点击次数（选择"无限"）</li>
+                    <li>点击"保存"</li>
+                </ol>
+            </div>
+
+            <div class="floating-window">
+                <h3>悬浮窗设置步骤：</h3>
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>开启悬浮窗</strong>
+                    <p>在自动点击器应用中：</p>
+                    <ol>
+                        <li>点击右上角的"设置"图标</li>
+                        <li>找到"悬浮窗"或"Floating Window"选项</li>
+                        <li>开启"显示悬浮窗"开关</li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>设置悬浮窗内容</strong>
+                    <p>在悬浮窗设置中：</p>
+                    <ol>
+                        <li>开启"显示点击次数"</li>
+                        <li>开启"显示运行时间"</li>
+                        <li>开启"显示倒计时"</li>
+                        <li>调整悬浮窗透明度（建议50%-70%）</li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>调整悬浮窗位置</strong>
+                    <p>在悬浮窗设置中：</p>
+                    <ol>
+                        <li>点击"悬浮窗位置"</li>
+                        <li>选择"自定义位置"</li>
+                        <li>将悬浮窗拖动到屏幕边缘（建议右上角）</li>
+                        <li>点击"保存位置"</li>
+                    </ol>
+                </div>
+
+                <p class="important">注意：不同应用的设置选项可能略有不同，但基本功能相似</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>开始运行</strong>
+                <p>在自动点击器应用中：</p>
+                <ol>
+                    <li>找到刚才创建的点击任务</li>
+                    <li>点击"开始"按钮</li>
+                    <li>确认悬浮窗显示正常</li>
+                    <li>观察点击是否准确</li>
+                </ol>
+            </div>
+
+            <h3>注意事项：</h3>
+            <ul>
             <ol>
                 <li>在手机上下载并安装"自动点击器"应用（如：Auto Clicker、自动点击器等）</li>
                 <li>在手机上打开开发者选项</li>
